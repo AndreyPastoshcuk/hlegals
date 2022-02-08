@@ -1,0 +1,5 @@
+@media screen and (max-width: 480px) {
+  .clients-item {
+    flex-basis: 50%;
+  }
+}
