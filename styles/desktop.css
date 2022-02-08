@@ -426,7 +426,9 @@
   font-size: 16px;
   line-height: 19px;
   color: #323264;
+  font-weight: bold;
 }
+
 .footer-address-link {
   font-size: 12px;
   line-height: 14px;
@@ -434,6 +436,7 @@
   text-transform: uppercase;
   color: #24a3ff;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .footer-social-link {
@@ -455,6 +458,7 @@
   line-height: 19px;
   color: #24a3ff;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .footer-address::after,
@@ -468,6 +472,15 @@
   margin: 0 10px;
   border-radius: 50%;
   background-color: #b3b3ba;
+}
+
+.footer-mail-link:hover,
+.footer-address-link:hover {
+  border-bottom: 1px solid #24a3ff;
+}
+
+.footer-phone-number:hover {
+  border-bottom: 1px solid #46466e;
 }
 
 .copyright {
