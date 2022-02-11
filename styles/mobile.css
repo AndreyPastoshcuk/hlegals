@@ -25,16 +25,7 @@
     display: none;
   }
 
-  .blackout {
-    display: flex;
-    top: 100%;
-    transition: transform 0.3s linear;
-  }
-
-  #nav-trigger:checked + .blackout {
-    transition: translateY(-100%)
-    z-index: 5;
-  }
+  
 
   .header-nav {
     display: flex;
@@ -54,7 +45,8 @@
     transition: transform 0.3s ease-out;
   }
 
-  #nav-trigger:checked + .header-nav {
+
+  #nav-trigger:checked ~ .header-nav {
     transform: translateY(-100%);
     z-index: 15;
   }
@@ -72,6 +64,22 @@
     font-size: 24px;
     line-height: 28px;
   }
+
+  .blackout {
+    display: none;
+    position: fixed; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(50, 50, 100);
+    
+    }
+
+  #nav-trigger:checked ~ .blackout {
+    display: block;
+    opacity: 0.7;
+   }
 
   .phone-number {
     color: #fff;
@@ -96,6 +104,55 @@
   .clients-item {
     flex-basis: 50%;
   }
+
+  .clients-item--hillel{
+    order: 1;
+  }
+
+  .clients-item--wannabiz {
+    order: 2;
+  }
+
+  .clients-item--tapgerine {
+    order: 3;
+  }
+
+  .clients-item--3dlook {
+    order: 4;
+  }
+
+  .clients-item--orangear {
+    order: 7;
+  }
+
+  .clients-item--adtelligent {
+    order: 12;  
+  }
+
+  .clients-item--clickky {
+    order: 6;
+  }
+
+  .clients-item--ecoleasing {
+    order: 5;
+  }
+
+  .clients-item--ingratek {
+    order: 8;
+  }
+
+  .clients-item--citypark {
+    order: 11;
+  }
+
+  .clients-item--artprint {
+    order: 10;
+  }
+
+  .clients-item--ultimatecard {
+    order: 9;
+  }
+
 
   /* footer */
 
