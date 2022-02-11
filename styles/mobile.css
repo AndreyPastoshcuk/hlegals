@@ -25,6 +25,17 @@
     display: none;
   }
 
+  .blackout {
+    display: flex;
+    top: 100%;
+    transition: transform 0.3s linear;
+  }
+
+  #nav-trigger:checked + .blackout {
+    transition: translateY(-100%)
+    z-index: 5;
+  }
+
   .header-nav {
     display: flex;
     max-height: 100%;
@@ -45,6 +56,7 @@
 
   #nav-trigger:checked + .header-nav {
     transform: translateY(-100%);
+    z-index: 15;
   }
 
   .header-nav .nav-close {
@@ -59,6 +71,18 @@
     text-align: center;
     font-size: 24px;
     line-height: 28px;
+  }
+
+  .phone-number {
+    color: #fff;
+  }
+
+  /* services */
+
+  .services-card .card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   /* Clients */
