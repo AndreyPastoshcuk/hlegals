@@ -264,8 +264,8 @@
   border-radius: 24px;
 }
 
-.services-card .card-logo:last-child {
-  padding: 22px;
+.card-logo-last {
+  padding: clamp(15px, calc(22 / 1360 * 100vw), 22px);
 }
 
 .services-card .card-title {

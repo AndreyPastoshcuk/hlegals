@@ -85,8 +85,43 @@
     align-items: center;
   }
 
+  /* cases */
+
+  .cases-list {
+    display: block;
+    flex-basis: 100%;
+  }
+
   /* Clients */
   .clients-item {
     flex-basis: 50%;
   }
+
+  /* footer */
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-adr {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer-more-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer-address::after,
+.footer-phone-number::after,
+.footer-phone-number::before {
+  display: none;
+}
+
+  .footer-contacts {
 }
